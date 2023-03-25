@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(96, 96, 96);
+}
+
+.img-1 {
+    position: relative;
+    top: 400px;
+    animation: Rocket 5s;
+    transition: 1s;
+}
+
+@keyframes Rocket {
+    70% {
+        transform: translateY(500px) rotate(0.9turn);
+    }
+
+    50% {
+        transform: translateY(-500px) rotate(0.1turn);
+    }
+}
+
+.img-2 {
+    position: relative;
+    left: 400px;
+    animation: White_man 5s;
+    bottom: 35px;
+    transition: 1s;
+}
+
+@keyframes White_man {
+    50% {
+        transform: translateY(-500px);
+    }
+}
+
+.img-3 {
+    position: relative;
+    left: 800px;
+    animation: Spotnik 5s;
+    bottom: 35px;
+    transition: 1s;
+}
+
+@keyframes Spotnik {
+    0% {
+        transform: rotate(0.5turn);
+    }
+
+    50% {
+        transform: translateY(-700px) rotate(0.5turn);
+    }
+
+    75% {
+        transform: translateX(-700px) translateY(-1000px);
+    }
+}
+
+.img-1:hover {
+    transform: rotate(1turn);
+    cursor: pointer;
+}
+
+.img-2:hover {
+    transform: translateY(-400px);
+    cursor: pointer;
+}
+
+.img-3:hover {
+    transform: translateX(-400px);
+    cursor: pointer;
+}
+
+.img-1:active {
+    transform: translateY(-400px);
+    cursor: pointer;
+}
+
+.img-2:active {
+    transform: translateY(400px) rotate(0.5turn);
+    cursor: pointer;
+}
+
+.img-3:active {
+    transform: translateY(-1000px) rotate(0.5turn) translateX(-500px);
+    cursor: pointer;
+}
